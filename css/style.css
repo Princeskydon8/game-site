@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #5c6950;
+  }
+  
+  header {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  li {
+    margin: 0 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(23, 26, 70);
+    padding: 0.5rem;
+    transition: all 0.8s ease;
+  }
+  
+  a:hover {
+    background-color: #333;
+    color: #fff;
+    border-radius: 0.5rem;
+  }
+  
+  main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    font-weight: bold;
+    color: #181946;
+  }
+  
+  .glass {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    transition: all 0.5s ease;
+    background: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 252, 252, 0.3)
+        );       
+  }
+  
+  .glass:hover {
+    transform: scale(1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  span{
+    color: rgb(75, 223, 45);
+  }
+  .user img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  .user img:hover {
+    transform: scale(1.03);
+  }
+  
+  .user h1 {
+    margin-top: 1rem;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .link img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .link:hover {
+    transform: translateX(5px);
+  }
+  .pro{
+    background: linear-gradient(to right top, #718682, #3ca0af);
+    border-radius: 1rem;
+    color:rgb(224, 230, 222);
+    padding: 1rem;
+}
+  .games {
+    flex: 2;
+  }
+  
+  .status {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .status input {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 100%;
+  }
+  .status input :hover{
+    transform: translateX(-5px);
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  .card {
+    background-color: rgba(117, 143, 102, 0.8);
+    backdrop-filter: blur(1px);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .progress {
+    background-color: #2d5a52;
+    width: 100%;
+    height: 20px;
+    border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .progress::after {
+    content: "";
+    width: 60%;
+    height: 100%;
+    background-color: #eceeec;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover .progress::after {
+    width: 100%;
+  }
+  
+  .percentage {
+    font-weight: bold;
+    background: -webkit-linear-gradient(#436b64, #293b3d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(37, 33, 33);
+    color: rgb(58, 235, 14);
+  }
+  
